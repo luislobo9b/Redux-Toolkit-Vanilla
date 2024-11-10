@@ -1,7 +1,7 @@
 import store from "./store/store.js"
 import { decrementCounter, incrementCounter, setCounter } from "./store/slices/counterSlice.js"
 
-function getCounter() {
+function getCounter() { // normalmente chamado de selectCounter
 	return store.getState().counter.value
 }
 
